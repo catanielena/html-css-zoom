@@ -8,9 +8,35 @@
 /* common */
 body{
     font-family: 'Lato', sans-serif;
+    background-color: #1a1a1a;
+    color: white;
 }
 
 
 /* header */
+
+header{
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-left > div{
+    display: inline-block;
+}
+
+.header-left > div, .header-right > div{
+    margin: 0 10px;
+}
+
+.shield{
+    color: #23d959;
+}
+
+.view > i{
+    margin-right: 5px;
+}
+
+
 /* main */
 /* footer */
