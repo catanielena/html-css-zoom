@@ -13,7 +13,6 @@ body{
     font-size: 14px;
 }
 
-
 /* header */
 
 header{
@@ -30,8 +29,28 @@ header{
     margin: 0 10px;
 }
 
+.shield, .recording{
+    vertical-align: middle;
+}
+.recording::before{
+    content: "";
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;;
+    background-color: red;
+    border: 4px solid #9e9e9e;
+    vertical-align: middle;
+    margin-right: 5px;
+    box-shadow: 0 0 0 0.5px white;
+}
+
 .shield{
     color: #23d959;
+}
+
+.view{
+    cursor: pointer;
 }
 
 .view > i{
@@ -69,6 +88,7 @@ header{
     border: 1px solid black;
     box-shadow: 0 20px 30px 2px #1a1a1a inset;
     background-color: black;
+    cursor: pointer;
 }
 
 .call-page i{
@@ -128,6 +148,11 @@ footer{
     margin: 0 10px;
 }
 
+.action:hover{
+    color: white;
+    cursor: pointer;
+}
+
 .icons{
     position: relative;
     padding: 0 20px;
@@ -160,6 +185,7 @@ button.end{
     color: white;
     font-size: 12px;
     margin: 0 10px;
+    cursor: pointer;
 }
 
 #share-screen{
