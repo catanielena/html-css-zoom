@@ -13,6 +13,21 @@ body{
     font-size: 14px;
 }
 
+/* button */
+button{
+    border-width: 0;
+    background-color: rgba(0, 0, 0, 0);
+}
+header button{
+    color: white;
+    font-size: 14px;
+}
+
+main button, footer button{
+    color: #aaabac;
+
+}
+
 /* header */
 
 header{
@@ -25,13 +40,14 @@ header{
     display: inline-block;
 }
 
-.header-left > div, .header-right > div{
+.header-left > div, .header-right{
     margin: 0 10px;
 }
 
 .shield, .recording{
     vertical-align: middle;
 }
+
 .recording::before{
     content: "";
     display: inline-block;
@@ -137,7 +153,6 @@ footer{
     background-color:#212325;
     justify-content: space-between;
     align-items: center;
-    color: #aaabac;
 }
 
 .actions-left, .actions-center, .actions-right{
