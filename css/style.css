@@ -13,20 +13,62 @@ body{
     font-size: 14px;
 }
 
+
 /* button */
-button{
+.btn{
     border-width: 0;
     background-color: rgba(0, 0, 0, 0);
-}
-header button{
     color: white;
     font-size: 14px;
+    cursor: pointer;
 }
 
-main button, footer button{
+main .btn, footer .btn{
     color: #aaabac;
 
 }
+
+.btn.page i{
+    font-size: 50px;
+    color: #2db7ff;
+}
+
+.btn.page{
+    text-align: center;
+    margin: 0 10px;
+    padding: 10px 10px 5px;
+    border: 1px solid black;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(33,35,37,1) 100%);
+}
+
+
+footer .btn i.main-icon{
+    font-size: 18px;
+} 
+footer .btn .icon-text{
+    font-size: 12px;
+}
+
+.btn.end{
+    background-color: #e02828;
+    border: none;
+    padding: 3px 20px;
+    border-radius: 5px;
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    margin: 0 10px;
+}
+
+footer .btn.action.select{
+    color: #23d959;
+}
+
+footer .btn.action:hover{
+    color: white;
+}
+
 
 /* header */
 
@@ -35,13 +77,16 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0 10px;
 }
 .header-left > div{
     display: inline-block;
 }
 
-.header-left > div, .header-right{
-    margin: 0 10px;
+.header-left > div, .header-right button{
+    background-color: #101010;
+    padding: 5px;
+    border-radius: 5px2;
 }
 
 .shield, .recording{
@@ -65,10 +110,6 @@ header{
     color: #23d959;
 }
 
-.view{
-    cursor: pointer;
-}
-
 .view > i{
     margin-right: 5px;
 }
@@ -80,7 +121,7 @@ header{
     height: calc(100vh - 95px);
 }
 
-.content-left{
+.content-left, .content-right{
     width: 10%;
     color: #7e7e7e;
 }
@@ -90,32 +131,30 @@ header{
     flex-wrap: wrap;
     justify-content: space-between;
     width: 80%;
+    overflow-y: auto;
 }
 
-.content-left{
+.content-left, .content-right{
     display: flex;
     align-items: center;
 }
 
-.call-page{
-    text-align: center;
-    margin-left: 5px;
-    padding: 10px 10px 5px;
-    border: 1px solid black;
-    box-shadow: 0 20px 30px 2px #1a1a1a inset;
-    background-color: black;
-    cursor: pointer;
+.content-right{
+    justify-content: flex-end;
 }
 
-.call-page i{
-    font-size: 50px;
-    color: #2db7ff;
+.content-center::-webkit-scrollbar{
+    width: 0;
+    background: transparent;
 }
+
+
 
 .user{
     position: relative;
-    width: calc(20% - 5px);
-    height: calc(20% - 5px);
+    width: calc(20% - 3px);
+    height: 150px;
+    margin-top: 3px;
     border-radius: 8px;
     overflow: hidden;
 }
@@ -125,7 +164,7 @@ header{
     height: 100%;
     object-fit: cover;
     object-position: center;
-    filter: blur();
+
 }
 
 .user-name{
@@ -148,11 +187,12 @@ header{
 /* footer */
 
 footer{
-    display: flex;
     height: 50px;
-    background-color:#212325;
+    display: flex;
     justify-content: space-between;
     align-items: center;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(33,35,37,1) 100%);
 }
 
 .actions-left, .actions-center, .actions-right{
@@ -163,10 +203,6 @@ footer{
     margin: 0 10px;
 }
 
-.action:hover{
-    color: white;
-    cursor: pointer;
-}
 
 .icons{
     position: relative;
@@ -180,31 +216,10 @@ footer{
     right: 0;
 }
 
-footer i.main-icon{
-    font-size: 18px;
-} 
+
 
 .fa-angle-up{
     font-size: 10px;
-}
-
-footer .icon-text{
-    font-size: 12px;
-}
-
-button.end{
-    background-color: #e02828;
-    border: none;
-    padding: 3px 20px;
-    border-radius: 5px;
-    color: white;
-    font-size: 12px;
-    margin: 0 10px;
-    cursor: pointer;
-}
-
-#share-screen{
-    color: #23d959;
 }
 
 #share-screen .main-icon{
